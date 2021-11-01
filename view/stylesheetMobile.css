@@ -1,0 +1,414 @@
+html,
+body {
+  background: rgb(0, 140, 255);
+  z-index: -1;
+  background-image: url(pictures/desktop_mobile.jpg);
+}
+
+/* Navigation bar */
+.topnav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 40px;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5fa);
+  float: right;
+  padding-bottom: 5%;
+}
+
+ul {
+  list-style-type: none;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.logo {
+  float: left;
+  height: 8vw;
+  width: auto;
+}
+#otherLogo {
+  display: none;
+}
+
+.navText {
+  float: right;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3vw;
+  line-height: 26px;
+  color: #6a707b;
+  padding-right: 3%;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Container for content */
+#mobileContainer {
+  position: absolute;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5fa);
+  height: 50%;
+  width: 80%;
+  top: 28%;
+  left: 10%;
+  z-index: 1;
+}
+
+h1 {
+  position: absolute;
+  width: 80%;
+  height: 44px;
+  left: 5%;
+  top: 3%;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6vw;
+  line-height: 44px;
+  color: #131821;
+}
+
+h3 {
+  position: absolute;
+  width: 85%;
+  height: 56px;
+  left: 5%;
+  top: 20%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.7vw;
+  line-height: 20px;
+  color: #6a707b;
+}
+
+/* Input form */
+#placeholder {
+  position: absolute;
+  width: 75%;
+  height: 15%;
+  left: 5%;
+  top: 45%;
+  background: #ffffff;
+  border: 1px solid #e3e3e4;
+  box-sizing: border-box;
+  border-left: 4px solid #4066a5;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 3%;
+  font-size: 3.7vw;
+  color: #6a707b;
+}
+
+#submit {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 80%;
+  background: #ffffff;
+  border: 1px solid #e3e3e4;
+  border-left: none;
+  box-sizing: border-box;
+  width: 15%;
+  height: 15%;
+  color: #6a707b;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+}
+
+#placeholder:hover {
+  position: absolute;
+  width: 75%;
+  height: 15%;
+  left: 5%;
+  top: 45%;
+  background: #ffffff;
+  border: 1px solid #4066a5;
+  box-sizing: border-box;
+  border-left: 4px solid #4066a5;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 3%;
+  font-size: 3.7vw;
+  color: #131821;
+}
+
+#submit:hover {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 80%;
+  background: #ffffff;
+  border: 1px solid #4066a5;
+  box-sizing: border-box;
+  width: 15%;
+  height: 15%;
+  color: #4066a5;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+}
+
+/* Checkbox and text for terms and conditions */
+#termsCheckboxLine {
+  position: absolute;
+  height: 28px;
+  left: 4%;
+  top: 58%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.7vw;
+  line-height: 1.3vw;
+  color: #6a707b;
+}
+#checkbox {
+  transform: scale(1.1);
+}
+
+#termsLink {
+  color: #131821;
+}
+
+#termsLink:active {
+  color: #233759;
+}
+
+#termsLink:hover {
+  color: #4066a5;
+}
+
+/* Line under terms */
+hr {
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  left: 5%;
+  top: 73%;
+  background: #e3e3e4;
+}
+
+/* Social buttons */
+.socialButtons {
+  position: absolute;
+  top: 80%;
+  color: black;
+  font-size: 5vw;
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 1.5vw;
+  font-size: 6vw;
+  width: 6vw;
+  height: 6vw;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0.1vw 0.5vw;
+}
+
+.fa-facebook {
+  border: 2px solid #131821;
+  color: #131821;
+  opacity: 0.3;
+}
+.fa-facebook:hover {
+  background-color: #4267b2;
+  border: 2px solid #4267b2;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-facebook:active {
+  background-color: #2f4a80;
+  border: 2px solid #2f4a80;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-instagram {
+  border: 2px solid #131821;
+  color: #131821;
+  opacity: 0.3;
+}
+.fa-instagram:hover {
+  background-color: #c13584;
+  border: 2px solid #c13584;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-instagram:active {
+  background-color: #8f2762;
+  border: 2px solid #8f2762;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-twitter {
+  border: 2px solid #131821;
+  color: #131821;
+  opacity: 0.3;
+}
+.fa-twitter:hover {
+  background-color: #1da1f2;
+  border: 2px solid #1da1f2;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-twitter:active {
+  background-color: #177fbf;
+  border: 2px solid #177fbf;
+  color: #ffffff;
+  opacity: 1;
+}
+.fa-youtube {
+  border: 2px solid #131821;
+  color: #131821;
+  opacity: 0.3;
+}
+.fa-youtube:hover {
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-youtube:active {
+  background-color: #cc0000;
+  border: 2px solid #cc0000;
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Line for Thank you page */
+#thanksLine {
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  left: 5%;
+  top: 73%;
+  background: #e3e3e4;
+}
+
+/* Position for social buttons in Thank you page */
+#thanksSocialButtons {
+  position: absolute;
+  top: 80%;
+  color: black;
+  font-size: 5vw;
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Throphy in Thank you page */
+#trophy {
+  position: absolute;
+  height: 30%;
+  top: 5%;
+  left: 5%;
+}
+
+/* Text position in thank you page*/
+#mobileThanks1 {
+  position: absolute;
+  width: 80%;
+  height: 44px;
+  left: 5%;
+  top: 25%;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6vw;
+  line-height: 44px;
+  color: #131821;
+}
+
+#mobileThanks3 {
+  position: absolute;
+  width: 85%;
+  height: 56px;
+  left: 5%;
+  top: 40%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.7vw;
+  line-height: 20px;
+  color: #6a707b;
+}
+
+/* Error message */
+
+#notValidEmail {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+  position: absolute;
+  top: 56%;
+  left: 10%;
+  background: #f2f5fa;
+  border: 1px solid red;
+  padding: 1px;
+  z-index: 9;
+}
+
+#notValidEmail.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}
+#noEmail {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+  position: absolute;
+  top: 56%;
+  left: 10%;
+  background: #f2f5fa;
+  border: 1px solid red;
+  padding: 1px;
+  z-index: 9;
+}
+
+#noEmail.visible {
+  display: block;
+}
+#noColumbia {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+  position: absolute;
+  top: 56%;
+  left: 10%;
+  background: #f2f5fa;
+  border: 1px solid red;
+  padding: 1px;
+  z-index: 9;
+}
+
+#noColumbia.visible {
+  display: block;
+}
+#checkboxMessage {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+  padding: 5px;
+}
+
+#checkboxMessage.visible {
+  display: block;
+}

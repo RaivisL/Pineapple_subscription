@@ -1,0 +1,400 @@
+html,
+body {
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+}
+
+/* Navigation bar */
+.topnav {
+  position: absolute;
+  width: 80%;
+  height: 40px;
+  left: 7%;
+  top: 5%;
+  float: right;
+  padding-bottom: 5%;
+}
+
+ul {
+  list-style-type: none;
+  top: 5%;
+}
+
+.logo {
+  float: left;
+  height: 2vw;
+  width: auto;
+}
+
+.navText {
+  float: right;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  line-height: 26px;
+  color: #6a707b;
+  padding: 2%;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1 {
+  position: absolute;
+  width: 399px;
+  height: 44px;
+  left: 20%;
+  top: 28%;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 44px;
+  color: #131821;
+}
+
+h3 {
+  position: absolute;
+  width: 75%;
+  height: 56px;
+  left: 20%;
+  top: 36%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  line-height: 28px;
+  color: #6a707b;
+}
+
+/* Input form */
+#placeholder {
+  position: absolute;
+  width: 84%;
+  height: 8%;
+  left: 16%;
+  top: 50%;
+  background: #ffffff;
+  border: 1px solid #e3e3e4;
+  box-sizing: border-box;
+  border-left: 4px solid #4066a5;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 5%;
+  font-size: 0.9vw;
+  color: #6a707b;
+}
+
+#submit {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 100%;
+  background: #ffffff;
+  border: 1px solid #e3e3e4;
+  border-left: none;
+  box-sizing: border-box;
+  width: 15%;
+  height: 8%;
+  color: #6a707b;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2vw;
+}
+
+#placeholder:hover {
+  position: absolute;
+  width: 84%;
+  height: 8%;
+  left: 16%;
+  top: 50%;
+  background: #ffffff;
+  border: 1px solid #4066a5;
+  box-sizing: border-box;
+  border-left: 4px solid #4066a5;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 5%;
+  font-size: 0.9vw;
+  color: #131821;
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+#submit:hover {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 100%;
+  background: #ffffff;
+  border: 1px solid #4066a5;
+  box-sizing: border-box;
+  width: 15%;
+  height: 8%;
+  color: #4066a5;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2vw;
+  box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+/* Checkbox and text for terms and conditions */
+#termsCheckboxLine {
+  position: absolute;
+  width: 359px;
+  height: 28px;
+  left: 20%;
+  top: 60%;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  line-height: 1.3vw;
+  color: #6a707b;
+}
+
+#checkbox {
+  transform: scale(1.2);
+}
+
+#termsLink {
+  color: #131821;
+}
+
+#termsLink:active {
+  color: #233759;
+}
+
+#termsLink:hover {
+  color: #4066a5;
+}
+
+/* Split of the screen in 2 parts */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.left {
+  left: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5fa);
+  width: 33%;
+  height: 100%;
+}
+
+.right {
+  right: 0;
+  background-image: url(pictures/image_summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 67%;
+  z-index: -1;
+}
+
+/* Line under terms */
+hr {
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  left: 20%;
+  top: 70%;
+  background: #e3e3e4;
+}
+
+/* Social buttons */
+.socialButtons {
+  position: absolute;
+  top: 77%;
+  color: black;
+  font-size: 2.2vw;
+  width: 65%;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 17%;
+}
+
+.fa {
+  padding: 0.5vw;
+  font-size: 1vw;
+  width: 2vw;
+  height: 2vw;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0.1vw 0.5vw;
+}
+
+.fa-facebook {
+  border: 2px solid #131821;
+  color: #131821;
+  opacity: 0.3;
+}
+.fa-facebook:hover {
+  background-color: #4267b2;
+  border: 2px solid #4267b2;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-facebook:active {
+  background-color: #2f4a80;
+  border: 2px solid #2f4a80;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-instagram {
+  border: 2px solid #131821;
+  color: #131821;
+  opacity: 0.3;
+}
+.fa-instagram:hover {
+  background-color: #c13584;
+  border: 2px solid #c13584;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-instagram:active {
+  background-color: #8f2762;
+  border: 2px solid #8f2762;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-twitter {
+  border: 2px solid #131821;
+  color: #131821;
+  opacity: 0.3;
+}
+.fa-twitter:hover {
+  background-color: #1da1f2;
+  border: 2px solid #1da1f2;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-twitter:active {
+  background-color: #177fbf;
+  border: 2px solid #177fbf;
+  color: #ffffff;
+  opacity: 1;
+}
+.fa-youtube {
+  border: 2px solid #131821;
+  color: #131821;
+  opacity: 0.3;
+}
+.fa-youtube:hover {
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fa-youtube:active {
+  background-color: #cc0000;
+  border: 2px solid #cc0000;
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Line for Thank you page */
+#thanksLine {
+  position: absolute;
+  width: 65%;
+  height: 1px;
+  left: 20%;
+  top: 50%;
+  background: #e3e3e4;
+}
+
+/* Position for social buttons in Thank you page */
+#thanksSocialButtons {
+  position: absolute;
+  top: 57%;
+  color: black;
+  font-size: 2.2vw;
+  width: 70%;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 17%;
+}
+
+/* Throphy in Thank you page */
+#trophy {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+/* Error messages */
+
+#notValidEmail {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+  left: 20%;
+  top: 56%;
+  position: absolute;
+  background: #f2f5fa;
+  border: 1px solid red;
+  padding: 1px;
+  z-index: 9;
+}
+
+#notValidEmail.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}
+#noEmail {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+  left: 20%;
+  top: 56%;
+  position: absolute;
+  background: #f2f5fa;
+  border: 1px solid red;
+  padding: 1px;
+  z-index: 9;
+}
+
+#noEmail.visible {
+  display: block;
+}
+#noColumbia {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+  left: 20%;
+  top: 56%;
+  position: absolute;
+  background: #f2f5fa;
+  border: 1px solid red;
+  padding: 1px;
+  z-index: 9;
+}
+
+#noColumbia.visible {
+  display: block;
+}
+#checkboxMessage {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+}
+
+#checkboxMessage.visible {
+  display: block;
+}
